@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-lg w-full bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-6 text-white">
+            <h1 class="text-2xl font-bold text-center">Kalkulator Sederhana</h1>
+        </div>
+        <div class="p-6"> 
+            <div class="border-t border-gray-200 pt-6">
+                <h3 class="text-lg font-bold mb-4 text-gray-700 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm0 2h8v12H6V4zm2 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm-1 4a1 1 0 100 2h4a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                    </svg>
+                    Kalkulator
+                </h3>
+                
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-3">
+                        <input type="number" id="angka1" placeholder="Angka 1" 
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="number" id="angka2" placeholder="Angka 2" 
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <div class="grid grid-cols-4 gap-2 sm:grid-cols-7">
+                        <button id="btn-tambah" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition-all">+</button>
+                        <button id="btn-kurang" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 rounded-lg transition-all">−</button>
+                        <button id="btn-kali" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 rounded-lg transition-all">×</button>
+                        <button id="btn-bagi" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-all">÷</button>
+                        <button id="btn-pangkat" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-lg transition-all">^</button>
+                        <button id="btn-akar" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 rounded-lg transition-all">√</button>
+                        <button id="btn-modulus" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 rounded-lg transition-all">%</button>
+                    </div>
+                    
+                    <div id="hasil-kalkulator" class="p-4 bg-gray-50 rounded-lg min-h-[50px] font-medium text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
