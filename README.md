@@ -17,7 +17,8 @@ Repository ini disusun dalam beberapa folder tugas:
   - **Tugas2**: Membuat Kalkulator Sederhana
   - **Tugas3**: Memvalidasi Form Input
 
-- **Alfajar_122140122_pertemuan2**: *Coming soon*
+- **Alfajar_122140122_pertemuan2**:
+  - Personal Dashboard - Habit and Book Tracker
 
 - **Alfajar_122140122_pertemuan3**: *Coming soon*
 
