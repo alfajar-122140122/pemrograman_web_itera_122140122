@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { BookProvider } from './context/BookContext';
 import Home from './pages/Home/Home';
 import Stats from './pages/Stats/Stats';
+import AddBook from './pages/AddBook/AddBook'; // Import halaman tambah buku
 import './App.css';
 
 function App() {
@@ -11,9 +12,7 @@ function App() {
       <Router>
         <div className="app">
           <nav className="app-navbar">
-            <div className="navbar-title">
-              Book Manager
-            </div>
+            <div className="navbar-title">Book Manager</div>
             <ul className="navbar-links">
               <li>
                 <Link to="/">Beranda</Link>
@@ -28,6 +27,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/stats" element={<Stats />} />
+              <Route path="/add-book" element={<AddBook />} /> {/* Rute tersembunyi */}
             </Routes>
           </main>
 

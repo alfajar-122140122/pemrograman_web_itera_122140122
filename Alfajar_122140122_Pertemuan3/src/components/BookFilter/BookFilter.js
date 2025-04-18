@@ -26,8 +26,13 @@ const BookFilter = () => {
       </div>
       
       <div className="filter-container">
-        <label>Filter: </label>
-        <select value={filter} onChange={handleFilterChange} className="filter-select">
+        <label htmlFor="filter-select">Filter: </label>
+        <select
+          id="filter-select"
+          value={filter}
+          onChange={handleFilterChange}
+          className="filter-select"
+        >
           <option value="semua">Semua Buku</option>
           <option value="milik">Sudah Dimiliki</option>
           <option value="baca">Sedang Dibaca</option>

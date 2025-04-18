@@ -1,0 +1,15 @@
+.add-book-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Putih untuk background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+.add-book-container h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000000; /* Hitam untuk teks judul */
+  margin-bottom: 1.5rem;
+}

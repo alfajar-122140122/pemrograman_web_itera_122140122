@@ -1,29 +1,23 @@
-import React, { useState } from 'react';
-import BookForm from '../../components/BookForm/BookForm';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import BookList from '../../components/BookList/BookList';
 import BookFilter from '../../components/BookFilter/BookFilter';
 import './Home.css';
 
 const Home = () => {
-  const [showForm, setShowForm] = useState(false);
-
-  const toggleForm = () => {
-    setShowForm(!showForm);
-  };
+  const navigate = useNavigate();
 
   return (
     <div className="home-container">
       <div className="home-header">
         <h1>Manajemen Buku Pribadi</h1>
-        <button 
+        <button
           className="add-book-button"
-          onClick={toggleForm}
+          onClick={() => navigate('/add-book')} // Navigasi ke halaman tambah buku
         >
-          {showForm ? 'Tutup Form' : 'Tambah Buku Baru'}
+          Tambah Buku Baru
         </button>
       </div>
-
-      {showForm && <BookForm />}
 
       <div className="filter-section">
         <BookFilter />
