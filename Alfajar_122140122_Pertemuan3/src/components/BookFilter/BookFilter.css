@@ -1,0 +1,80 @@
+/* BookFilter.css */
+.book-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Putih untuk background filter */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  margin-bottom: 1.5rem;
+}
+
+.search-container {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0; /* Border abu-abu terang */
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Abu-abu sangat terang untuk input */
+  color: #333333; /* Abu-abu gelap untuk teks input */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #333333; /* Hitam untuk border saat fokus */
+  background-color: #ffffff; /* Putih untuk input saat fokus */
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-container label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  color: #333333; /* Abu-abu gelap untuk label */
+}
+
+.filter-select {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0; /* Border abu-abu terang */
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Abu-abu sangat terang untuk dropdown */
+  color: #333333; /* Abu-abu gelap untuk teks dropdown */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #333333; /* Hitam untuk border saat fokus */
+  background-color: #ffffff; /* Putih untuk dropdown saat fokus */
+}
+
+@media (max-width: 768px) {
+  .book-filter {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .filter-select {
+    flex-grow: 1;
+  }
+}

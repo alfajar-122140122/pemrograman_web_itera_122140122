@@ -1,0 +1,108 @@
+.stats-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Putih untuk background utama */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+.stats-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000; /* Hitam untuk teks judul */
+  font-weight: 600;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #f9f9f9; /* Abu-abu sangat terang untuk kartu */
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Efek hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Shadow lebih tegas saat hover */
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333333; /* Abu-abu gelap untuk teks judul kartu */
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000; /* Hitam untuk nilai statistik */
+}
+
+.stats-chart {
+  margin-top: 20px;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #000000; /* Hitam untuk judul chart */
+  font-weight: 600;
+}
+
+.chart-container {
+  display: flex;
+  height: 30px;
+  background-color: #f0f0f0; /* Abu-abu terang untuk background chart */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chart-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* Putih untuk teks di dalam bar */
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.owned-bar {
+  background-color: #4caf50; /* Hijau lembut untuk status "Dimiliki" */
+}
+
+.reading-bar {
+  background-color: #ff9800; /* Oranye lembut untuk status "Sedang Dibaca" */
+}
+
+.wishlist-bar {
+  background-color: #f44336; /* Merah lembut untuk status "Wishlist" */
+}
+
+.no-data-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #666666; /* Abu-abu gelap untuk pesan tanpa data */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .stats-cards {
+    grid-template-columns: 1fr; /* Satu kolom untuk perangkat kecil */
+  }
+
+  .chart-container {
+    flex-direction: column; /* Chart lebih fleksibel di perangkat kecil */
+  }
+}

@@ -1,0 +1,109 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ffffff; /* Abu-abu terang untuk background utama */
+  color: #333333; /* Abu-abu gelap untuk teks utama */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-navbar {
+  background-color: #ffffff; /* Putih untuk navbar */
+  padding: 1rem 2rem;
+  color: #333333; /* Abu-abu gelap untuk teks di navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0; /* Border abu-abu terang */
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333333; /* Abu-abu gelap untuk teks judul navbar */
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-links li {
+  margin-left: 1.5rem;
+}
+
+.navbar-links a {
+  color: #333333; /* Abu-abu gelap untuk link */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #555555; /* Abu-abu lebih terang untuk efek hover */
+}
+
+.app-content {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff; /* Putih untuk konten */
+  border-radius: 8px;
+}
+
+.app-footer {
+  background-color: #ffffff; /* Putih untuk footer */
+  color: #777777; /* Abu-abu terang untuk teks footer */
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0; /* Border abu-abu terang */
+}
+
+.app-footer p {
+  margin: 0.5rem 0;
+}
+
+.app-footer a {
+  color: #333333; /* Abu-abu gelap untuk link di footer */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.app-footer a:hover {
+  color: #555555; /* Abu-abu lebih terang untuk efek hover link */
+}
+
+/* Media queries untuk responsif */
+@media (max-width: 768px) {
+  .app-navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .navbar-links {
+    margin-top: 1rem;
+  }
+  
+  .navbar-links li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .app-content {
+    padding: 1rem;
+  }
+}
