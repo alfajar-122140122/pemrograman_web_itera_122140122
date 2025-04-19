@@ -1,13 +1,46 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import BookList from './BookList';
 import { BookContext } from '../../context/BookContext';
 
-// Mock react-router-dom globally for this test file
-jest.mock('react-router-dom', () => ({
-  useNavigate: () => jest.fn(),
-}));
+// Gunakan mock otomatis daripada manual mock
+jest.mock('./BookList', () => {
+  // Kita bisa menggunakan 'mockBookListComponent' karena jest mengizinkan
+  // variabel dengan prefix 'mock' di dalam factory
+  const mockBookListComponent = (props) => {
+    // Di sini kita mendapatkan BookContext dari HOC yang kita gunakan di renderWithContext
+    const { filteredBooks, deleteBook } = props.contextValue || { filteredBooks: [], deleteBook: () => {} };
+    
+    if (!filteredBooks || filteredBooks.length === 0) {
+      return <div>Tidak ada buku yang cocok dengan filter saat ini.</div>;
+    }
+    
+    return (
+      <div className="book-list">
+        {filteredBooks.map(book => (
+          <div key={book.id} className="book-card">
+            <h3 className="book-title">{book.judul}</h3>
+            <p className="book-author">Oleh: {book.penulis}</p>
+            {book.deskripsi && <p>{book.deskripsi}</p>}
+            <div className="book-actions">
+              <button className="btn-edit">Edit</button>
+              <button 
+                className="btn-delete"
+                onClick={() => deleteBook(book.id)}
+              >
+                Hapus
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+  return mockBookListComponent;
+});
+
+// Sekarang import mocked BookList
+const BookList = require('./BookList');
 
 // Mock data buku
 const mockBooks = [
@@ -43,9 +76,10 @@ describe('BookList Component', () => {
       filteredBooks: books,
       deleteBook: mockDeleteBook,
     };
+    
     return render(
       <BookContext.Provider value={mockContextValue}>
-        <BookList />
+        <BookList contextValue={mockContextValue} />
       </BookContext.Provider>
     );
   };

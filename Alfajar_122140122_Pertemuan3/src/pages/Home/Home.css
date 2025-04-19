@@ -1,12 +1,12 @@
-/* Home.css */
+
 .home-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  background-color: #ffffff; /* Putih untuk background utama */
+  background-color: #ffffff; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .home-header {
@@ -17,7 +17,7 @@
 }
 
 .home-header h1 {
-  color: #000000; /* Hitam untuk teks judul */
+  color: #000000; 
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -26,16 +26,16 @@
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
-  background-color: #000000; /* Hitam untuk tombol */
-  color: #ffffff; /* Putih untuk teks tombol */
+  background-color: #000000; 
+  color: #ffffff; 
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .add-book-button:hover {
-  background-color: #333333; /* Abu-abu gelap untuk hover tombol */
-  transform: translateY(-2px); /* Efek hover */
+  background-color: #333333; 
+  transform: translateY(-2px); 
 }
 
 .filter-section {

@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Book Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deskripsi Aplikasi
 
-## Available Scripts
+Book Manager adalah aplikasi web berbasis React untuk mengelola koleksi buku pribadi. Dengan aplikasi ini, pengguna dapat menambah, mengedit, menghapus, mencari, dan memfilter buku berdasarkan status (Sudah Dimiliki, Sedang Dibaca, Ingin Dibeli). Selain itu, aplikasi juga menampilkan statistik koleksi buku dalam bentuk visual.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Instruksi Instalasi dan Menjalankan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone repository ini**
+   ```bash
+   git clone <url-repo-anda>
+   cd <nama-folder-repo>
+   ```
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
+3. **Jalankan aplikasi**
+    ```bash
+    npm start
+    ```
+    Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
+4. **Jalankan testing**
+    ```bash
+    npm test
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshot Antarmuka
+Beranda (Daftar Buku)
+![Antarmuka Beranda](./Screenshot%20Antarmuka\beranda.png)
+Form Tambah/Edit Buku
+![Antarmuka Input](./Screenshot%20Antarmuka\inputFOrm.png)
+Statistik Koleksi Buku
+![Antarmuka Statistik](./Screenshot%20Antarmuka\statistik.png)
 
-### `npm test`
+## Penjelasan Fitur React yang Digunakan
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Functional Component & Hooks**  
+  Semua komponen dibangun menggunakan React functional component dan memanfaatkan berbagai hooks seperti `useState`, `useEffect`, `useContext`, dan `useMemo` untuk mengelola state, efek samping, context, dan optimasi performa.
 
-### `npm run build`
+- **Context API**  
+  Menggunakan Context (`BookContext`) untuk menyimpan dan membagikan state global koleksi buku, filter, dan pencarian ke seluruh komponen aplikasi tanpa perlu prop drilling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Custom Hook**  
+  - `useLocalStorage`: Custom hook untuk menyimpan dan mengambil data buku dari localStorage browser, sehingga data tetap tersimpan meskipun halaman di-refresh.
+  - `useBookStats`: Custom hook untuk menghitung statistik koleksi buku seperti jumlah total, jumlah berdasarkan status, dan jumlah penulis unik.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React Router**  
+  Navigasi antar halaman menggunakan `react-router-dom` dengan komponen seperti `<Routes>`, `<Route>`, `<Link>`, dan hook `useNavigate` untuk berpindah halaman secara dinamis.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Testing**  
+  Pengujian dilakukan menggunakan `@testing-library/react` dan `jest` untuk memastikan setiap komponen, context, dan custom hook berjalan sesuai harapan. Unit test mencakup fungsi utama seperti tambah, hapus, filter, dan statistik buku.
 
-### `npm run eject`
+## Hasil Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Hasil Test](Laporan%20Testing/hasilTest.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Semua fungsi utama (tambah, hapus, filter, statistik) telah diuji dengan unit test.  
+Pengujian dilakukan pada context, custom hook, dan komponen utama.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Identitas
+- Nama  : Alfajar 
+- NIM   : 122140122
+- Mata Kuliah : Pemrograman Web RB

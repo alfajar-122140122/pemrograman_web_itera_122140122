@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import BookFilter from './BookFilter';
 import { BookContext } from '../../context/BookContext'; // Pastikan path ini benar
 
-describe('BookFilter Component', () => {
+describe('Komponen BookFilter', () => {
   const mockSetFilter = jest.fn();
   const mockSetSearchTerm = jest.fn();
 
@@ -15,6 +15,7 @@ describe('BookFilter Component', () => {
     setSearchTerm: mockSetSearchTerm,
   };
 
+  // Fungsi untuk merender komponen dengan context palsu
   const renderComponent = () =>
     render(
       <BookContext.Provider value={mockContextValue}>
@@ -22,17 +23,17 @@ describe('BookFilter Component', () => {
       </BookContext.Provider>
     );
 
-  test('renders the BookFilter component correctly', () => {
+  test('menampilkan komponen BookFilter dengan benar', () => {
     renderComponent();
 
-    // Periksa apakah input pencarian dirender
+    // Cek apakah input pencarian muncul
     expect(screen.getByPlaceholderText('Cari judul atau penulis...')).toBeInTheDocument();
 
-    // Periksa apakah dropdown filter dirender
+    // Cek apakah dropdown filter muncul
     expect(screen.getByLabelText('Filter:')).toBeInTheDocument();
   });
 
-  test('updates search term when typing in the search input', () => {
+  test('memperbarui search term saat mengetik di input pencarian', () => {
     renderComponent();
 
     const searchInput = screen.getByPlaceholderText('Cari judul atau penulis...');
@@ -42,7 +43,7 @@ describe('BookFilter Component', () => {
     expect(mockSetSearchTerm).toHaveBeenCalledWith('React');
   });
 
-  test('updates filter when selecting a new option', () => {
+  test('memperbarui filter saat memilih opsi baru', () => {
     renderComponent();
 
     const filterSelect = screen.getByLabelText('Filter:');

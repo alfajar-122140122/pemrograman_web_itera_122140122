@@ -1,4 +1,3 @@
-/* App.css */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +6,8 @@
 }
 
 body {
-  background-color: #ffffff; /* Abu-abu terang untuk background utama */
-  color: #333333; /* Abu-abu gelap untuk teks utama */
+  background-color: #ffffff; 
+  color: #333333; 
 }
 
 .app {
@@ -18,19 +17,19 @@ body {
 }
 
 .app-navbar {
-  background-color: #ffffff; /* Putih untuk navbar */
+  background-color: #ffffff; 
   padding: 1rem 2rem;
-  color: #333333; /* Abu-abu gelap untuk teks di navbar */
+  color: #333333; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0; /* Border abu-abu terang */
+  border-bottom: 1px solid #e0e0e0; 
 }
 
 .navbar-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #333333; /* Abu-abu gelap untuk teks judul navbar */
+  color: #333333; 
 }
 
 .navbar-links {
@@ -43,14 +42,14 @@ body {
 }
 
 .navbar-links a {
-  color: #333333; /* Abu-abu gelap untuk link */
+  color: #333333; 
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-  color: #555555; /* Abu-abu lebih terang untuk efek hover */
+  color: #555555; 
 }
 
 .app-content {
@@ -59,18 +58,18 @@ body {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  background-color: #ffffff; /* Putih untuk konten */
+  background-color: #ffffff; 
   border-radius: 8px;
 }
 
 .app-footer {
-  background-color: #ffffff; /* Putih untuk footer */
-  color: #777777; /* Abu-abu terang untuk teks footer */
+  background-color: #ffffff; 
+  color: #777777; 
   text-align: center;
   padding: 1.5rem;
   margin-top: auto;
   font-size: 0.9rem;
-  border-top: 1px solid #e0e0e0; /* Border abu-abu terang */
+  border-top: 1px solid #e0e0e0; 
 }
 
 .app-footer p {
@@ -78,16 +77,16 @@ body {
 }
 
 .app-footer a {
-  color: #333333; /* Abu-abu gelap untuk link di footer */
+  color: #333333; 
   text-decoration: none;
   font-weight: 500;
 }
 
 .app-footer a:hover {
-  color: #555555; /* Abu-abu lebih terang untuk efek hover link */
+  color: #555555; 
 }
 
-/* Media queries untuk responsif */
+
 @media (max-width: 768px) {
   .app-navbar {
     flex-direction: column;

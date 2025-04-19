@@ -2,16 +2,16 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff; /* Putih untuk background utama */
+  background-color: #ffffff; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .stats-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #000000; /* Hitam untuk teks judul */
+  color: #000000; 
   font-weight: 600;
 }
 
@@ -23,30 +23,30 @@
 }
 
 .stat-card {
-  background-color: #f9f9f9; /* Abu-abu sangat terang untuk kartu */
+  background-color: #f9f9f9; 
   padding: 15px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px); /* Efek hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Shadow lebih tegas saat hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
 }
 
 .stat-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #333333; /* Abu-abu gelap untuk teks judul kartu */
+  color: #333333; 
   font-weight: 500;
 }
 
 .stat-value {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000000; /* Hitam untuk nilai statistik */
+  color: #000000; 
 }
 
 .stats-chart {
@@ -57,14 +57,14 @@
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #000000; /* Hitam untuk judul chart */
+  color: #000000; 
   font-weight: 600;
 }
 
 .chart-container {
   display: flex;
   height: 30px;
-  background-color: #f0f0f0; /* Abu-abu terang untuk background chart */
+  background-color: #f0f0f0; 
   border-radius: 8px;
   overflow: hidden;
 }
@@ -73,36 +73,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff; /* Putih untuk teks di dalam bar */
+  color: #ffffff; 
   font-size: 0.9rem;
   font-weight: bold;
 }
 
 .owned-bar {
-  background-color: #4caf50; /* Hijau lembut untuk status "Dimiliki" */
+  background-color: #4caf50; 
 }
 
 .reading-bar {
-  background-color: #ff9800; /* Oranye lembut untuk status "Sedang Dibaca" */
+  background-color: #ff9800; 
 }
 
 .wishlist-bar {
-  background-color: #f44336; /* Merah lembut untuk status "Wishlist" */
+  background-color: #f44336; 
 }
 
 .no-data-message {
   text-align: center;
   font-size: 1rem;
-  color: #666666; /* Abu-abu gelap untuk pesan tanpa data */
+  color: #666666; 
   margin-top: 20px;
 }
 
 @media (max-width: 768px) {
   .stats-cards {
-    grid-template-columns: 1fr; /* Satu kolom untuk perangkat kecil */
+    grid-template-columns: 1fr; 
   }
 
   .chart-container {
-    flex-direction: column; /* Chart lebih fleksibel di perangkat kecil */
+    flex-direction: column; 
   }
 }
