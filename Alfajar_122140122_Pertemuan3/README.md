@@ -10,8 +10,8 @@ Book Manager adalah aplikasi web berbasis React untuk mengelola koleksi buku pri
 
 1. **Clone repository ini**
    ```bash
-   git clone https://github.com/alfajar-122140122/pemrograman_web_itera_122140122/Alfajar_122140122_Pertemuan3.git
-   cd Alfajar_122140122_Pertemuan3
+   git clone https://github.com/alfajar-122140122/pemrograman_web_itera_122140122.git
+   cd pemrograman_web_itera_122140122/Alfajar_122140122_Pertemuan3
    ```
 2. **Install dependencies**
     ```bash
