@@ -20,7 +20,8 @@ Repository ini disusun dalam beberapa folder tugas:
 - **Alfajar_122140122_pertemuan2**:
   - Personal Dashboard - Habit and Book Tracker
 
-- **Alfajar_122140122_pertemuan3**: *Coming soon*
+- **Alfajar_122140122_pertemuan3**:
+  - Book Manager - Website Manajemen Buku Pribadi
 
 ## Tentang
 
