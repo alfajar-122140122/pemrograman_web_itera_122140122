@@ -28,12 +28,16 @@ Book Manager adalah aplikasi web berbasis React untuk mengelola koleksi buku pri
     ```
 
 ## Screenshot Antarmuka
-Beranda (Daftar Buku)
-![Antarmuka Beranda](Screenshot%20Antarmuka\beranda.png)
-Form Tambah/Edit Buku
-![Antarmuka Input](Screenshot%20Antarmuka\inputForm.png)
-Statistik Koleksi Buku
-![Antarmuka Statistik](Screenshot%20Antarmuka\statistik.png)
+
+### Beranda (Daftar Buku)
+![Antarmuka Beranda](Screenshot%20Antarmuka/beranda.png)
+
+### Form Tambah/Edit Buku
+![Antarmuka Input](Screenshot%20Antarmuka/inputForm.png)
+
+### Statistik Koleksi Buku
+![Antarmuka Statistik](Screenshot%20Antarmuka/statistik.png)
+
 
 ## Penjelasan Fitur React yang Digunakan
 
