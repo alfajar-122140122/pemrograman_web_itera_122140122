@@ -1,16 +1,3 @@
-"""
-Buatlah program pengelolaan data nilai mahasiswa:
-Buat list berisi minimal 5 dictionary data mahasiswa (nama, nim, nilai_uts, nilai_uas, nilai_tugas)
-Hitung nilai akhir setiap mahasiswa dengan rumus: (30% UTS + 40% UAS + 30% Tugas)
-Tentukan grade setiap mahasiswa berdasarkan nilai akhir:
-A: nilai akhir 80 atau lebih
-B: nilai akhir 70 sampai 79
-C: nilai akhir 60 sampai 69
-D: nilai akhir 50 sampai 59
-E: nilai akhir kurang dari 50
-Tampilkan data mahasiswa lengkap dengan nilai akhir dan grade dalam format tabel
-Tampilkan mahasiswa dengan nilai tertinggi dan terendah
-"""
 # Library untuk manipulasi data, dalam konteks ini untuk memuat data dalam format tabel
 import pandas as pd
 
