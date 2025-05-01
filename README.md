@@ -22,6 +22,14 @@ Repository ini disusun dalam beberapa folder tugas:
 
 - **Alfajar_122140122_pertemuan3**:
   - Book Manager - Website Manajemen Buku Pribadi
+ 
+- **Alfajar_122140122_pertemuan4**:
+  - Perhitungan BMI (Python)
+  - Pengelolaan Data Mahasiswa (Python)
+  - Operasi Matematika (Python)
+ 
+- **Alfajar_122140122_pertemuan4**:
+  - Sistem Manajemen Perpustakaan Sederhana - OOP Python
 
 ## Tentang
 
