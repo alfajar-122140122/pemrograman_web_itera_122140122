@@ -1,7 +1,6 @@
-# Sistem Manajemen Mata Kuliah ITERA
+# Sistem Manajemen Mata Kuliah 
 
-Aplikasi RESTful API untuk mengelola data mata kuliah Program Studi Teknik Informatika Institut Teknologi Sumatera.
-
+Aplikasi RESTful API untuk mengelola data mata kuliah 
 ## Fitur Utama
 
 - Operasi CRUD lengkap untuk data mata kuliah
@@ -126,6 +125,4 @@ pytest
 - Mata Kuliah: Pemrograman Web
 
 ## Lisensi
-
-Hak Cipta © 2024 Institut Teknologi Sumatera.  
 Dikembangkan untuk Tugas Praktikum Pemrograman Web.
