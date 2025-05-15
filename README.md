@@ -28,8 +28,11 @@ Repository ini disusun dalam beberapa folder tugas:
   - Pengelolaan Data Mahasiswa (Python)
   - Operasi Matematika (Python)
  
-- **Alfajar_122140122_pertemuan4**:
+- **Alfajar_122140122_pertemuan5**:
   - Sistem Manajemen Perpustakaan Sederhana - OOP Python
+ 
+- **Alfajar_122140122_pertemuan6**:
+  - Sistem Manajemen Matakuliah - Python Pyramid
 
 ## Tentang
 
