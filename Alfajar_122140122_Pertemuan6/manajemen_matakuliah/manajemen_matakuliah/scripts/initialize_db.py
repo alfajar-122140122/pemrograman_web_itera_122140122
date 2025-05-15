@@ -14,7 +14,7 @@ from ..models.meta import Base
 
 def setup_models(dbsession):
     """
-    Add initial model objects to the database.
+    Menambahkan data ke dalam database.
     """
     courses = [
         {"kode_matkul": "FI1103", "nama_matkul": "Fisika Dasar IB", "sks": 3, "semester": 1},

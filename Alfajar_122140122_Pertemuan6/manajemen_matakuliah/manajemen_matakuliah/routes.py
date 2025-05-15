@@ -2,7 +2,7 @@ def includeme(config):
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('home', '/')
 
-    # Add routes for the API
+    # Tambah route untuk API
     config.add_route('matakuliah', '/api/matakuliah', request_method='GET')
     config.add_route('get_matakuliah_by_id', '/api/matakuliah/{id}', request_method='GET')
     config.add_route('add_matakuliah', '/api/matakuliah', request_method='POST')
